@@ -26,12 +26,15 @@ Note that this description covers what the code SHOULD do. It may be very slight
 	* The class Deck's constructor does not accept input, and you can assume this will always be handled correctly by a programmer using this code.
 
 	* The Deck constructor builds a list of cards -- all the cards that would be included in a 52-card deck: rank 1-13 of each of the four suits.
+        Use a for loop to loop thru all 52 cards to check if each item in the list is an instance of class Card
 
 	* The Deck constructor creates one instance variable: self.cards, which should hold a list of Card objects when a Deck instance is created.
 
 	* The Deck string method should return a multi-line string with one line for each printed representation of a card in the deck. So a complete deck should have a 52-line string of strings like "Ace of Diamonds", "Two of Diamonds", etc.
+        Count to make sure it spits out 52 cards:
+            make a list, split the string by '/n' and append it into list. 
 
-	* Deck has a method pop_card which accepts an integer as input and has a default value such that the Deck will pop off the last (top) card of the deck, as if you're taking off the top card in a card game. When pop_card is invoked on a Deck instance, the last card in the deck is removed from the deck. You should be able to "pop" all of the cards off of the deck until the deck is empty (its self.cards list is the empty list).
+	* Deck has a method pop_card which accepts an integer as input and has a default value such that the Deck will pop off the last (top) card of the deck, as if you're taking off the top card in a card game. When pop_card is invoked on a Deck instance, the last card in the deck is removed from the deck. You should be able to "pop" all of the cards off of the deck until the deck is empty (its self.cards list is the empty list). 
 
 	* Deck has a method shuffle which accepts no external input and shuffles the self.cards list in the Deck at that time so that it has a random order.
 
